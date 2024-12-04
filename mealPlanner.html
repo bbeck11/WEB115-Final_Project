@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="mealPlanListener.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="Meal-Planner-Banner.jpg">
+    </header>
+    <form id="myForm">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder=" Enter your name." required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder=" Enter your email." required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="goal">Goal:</label>
+                    <input type="text" id="goal" placeholder="Enter your goal for the week." required><br>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <h3>Monday</h3>
+                    <div id="mondayForm" style="display: block;">
+                        <label for="mondayBreakfast">Breakfast:</label>
+                        <input type="text" id="mondayBreakfast" placeholder="Item 1, 2, 3 etc." required><br>
+                        <label for="mondaySnack">Snack:</label>
+                        <input type="text" id="mondaySnack"><br>
+                        <label for="mondayLunch">Lunch:</label>
+                        <input type="text" id="mondayLunch"><br>
+                        <label for="mondaySnack2">Snack:</label>
+                        <input type="text" id="mondaySnack2"><br>
+                        <label for="mondayDinner">Dinner:</label>
+                        <input type="text" id="mondayDinner"><br>
+                    </div>
+                    <!-- Toggle buttons have been commented out because it is out of scope functionality -->
+
+                    <!-- <button type="button" id="toggleMonday">Show/Hide Monday</button> -->
+                </td>
+                <td>
+                    <h3>Tuesday</h3>
+                    <div id="tuesdayForm" style="display: block;">
+                        <label for="tuesdayBreakfast">Breakfast:</label>
+                        <input type="text" id="tuesdayBreakfast"><br>
+                        <label for="tuesdaySnack">Snack:</label>
+                        <input type="text" id="tuesdaySnack"><br>
+                        <label for="tuesdayLunch">Lunch:</label>
+                        <input type="text" id="tuesdayLunch"><br>
+                        <label for="tuesdaySnack2">Snack:</label>
+                        <input type="text" id="tuesdaySnack2"><br>
+                        <label for="tuesdayDinner">Dinner:</label>
+                        <input type="text" id="tuesdayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleTuesday">Show/Hide Tuesday</button> -->
+                </td>
+                <td>
+                    <h3>Wednesday</h3>
+                    <div id="wednesdayForm" style="display: block;">
+                        <label for="wednesdayBreakfast">Breakfast:</label>
+                        <input type="text" id="wednesdayBreakfast"><br>
+                        <label for="wednesdaySnack">Snack:</label>
+                        <input type="text" id="wednesdaySnack"><br>
+                        <label for="wednesdayLunch">Lunch:</label>
+                        <input type="text" id="wednesdayLunch"><br>
+                        <label for="wednesdaySnack2">Snack:</label>
+                        <input type="text" id="wednesdaySnack2"><br>
+                        <label for="wednesdayDinner">Dinner:</label>
+                        <input type="text" id="wednesdayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleWednesday">Show/Hide Wednesday</button> -->
+                </td>
+                <td>
+                    <h3>Thursday</h3>
+                    <div id="thursdayForm" style="display: block;">
+                        <label for="thursdayBreakfast">Breakfast:</label>
+                        <input type="text" id="thursdayBreakfast"><br>
+                        <label for="thursdaySnack">Snack:</label>
+                        <input type="text" id="thursdaySnack"><br>
+                        <label for="thursdayLunch">Lunch:</label>
+                        <input type="text" id="thursdayLunch"><br>
+                        <label for="thursdaySnack2">Snack:</label>
+                        <input type="text" id="thursdaySnack2"><br>
+                        <label for="thursdayDinner">Dinner:</label>
+                        <input type="text" id="thursdayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleThursday">Show/Hide Thursday</button> -->
+                </td>
+                <td>
+                    <h3>Friday</h3>
+                    <div id="fridayForm" style="display: block;">
+                        <label for="fridayBreakfast">Breakfast:</label>
+                        <input type="text" id="fridayBreakfast"><br>
+                        <label for="fridaySnack">Snack:</label>
+                        <input type="text" id="fridaySnack"><br>
+                        <label for="fridayLunch">Lunch:</label>
+                        <input type="text" id="fridayLunch"><br>
+                        <label for="fridaySnack2">Snack:</label>
+                        <input type="text" id="fridaySnack2"><br>
+                        <label for="fridayDinner">Dinner:</label>
+                        <input type="text" id="fridayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleFriday">Show/Hide Friday</button> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Saturday</h3>
+                    <div id="saturdayForm" style="display: block;">
+                        <label for="saturdayBreakfast">Breakfast:</label>
+                        <input type="text" id="saturdayBreakfast"><br>
+                        <label for="saturdaySnack">Snack:</label>
+                        <input type="text" id="saturdaySnack"><br>
+                        <label for="saturdayLunch">Lunch:</label>
+                        <input type="text" id="saturdayLunch"><br>
+                        <label for="saturdaySnack2">Snack:</label>
+                        <input type="text" id="saturdaySnack2"><br>
+                        <label for="saturdayDinner">Dinner:</label>
+                        <input type="text" id="saturdayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleSaturday">Show/Hide Saturday</button> -->
+                </td>
+                <td>
+                    <h3>Sunday</h3>
+                    <div id="sundayForm" style="display: block;">
+                        <label for="sundayBreakfast">Breakfast:</label>
+                        <input type="text" id="sundayBreakfast"><br>
+                        <label for="sundaySnack">Snack:</label>
+                        <input type="text" id="sundaySnack"><br>
+                        <label for="sundayLunch">Lunch:</label>
+                        <input type="text" id="sundayLunch"><br>
+                        <label for="sundaySnack2">Snack:</label>
+                        <input type="text" id="sundaySnack2"><br>
+                        <label for="sundayDinner">Dinner:</label>
+                        <input type="text" id="sundayDinner"><br>
+                    </div>
+                    <!-- <button type="button" id="toggleSunday">Show/Hide Sunday</button> -->
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><input type="button" id="submit" value="Create Meal Plan"></td>
+                <td><input type="button" id="download" value="Download Plan"></td>
+                <td><input type="button" id="clear" value="Clear Plan  "></td>
+            </tr>
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    background-color: #87ceeb;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+header img {
+    width: 80%;
+    height: auto;
+}
+
+form {
+    margin: 6%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+td {
+    padding: 10px;
+    margin: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    background-color: aliceblue;
+    border-color: #6f33e6cd;
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #9b7bdbcd;
+    border-color: #00ffff;
+}
+
+button[type="button"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #9b7bdbcd;
+    border-color: #00ffff;
+    text-align: center;
+}
+
